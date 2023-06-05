@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="MainContainer">
+    <div class="form">
+      <label for="day">DAY</label>
+      <span class="errMSG dd"></span>
+      <input type="number" name="day" placeholder="DD" id="day">
+
+      <label for="month">MONTH</label>
+      <span class="errMSG mm"></span>
+      <input type="number" name="month" placeholder="MM" id="month">
+      <label for="year">YEAR</label>
+      <span class="errMSG yy"></span>
+      <input type="number" name="year" placeholder="YYYY" id="year">
+      <button onclick="findAge()"><img src="./assets/images/icon-arrow.svg" alt="" srcset=""></button>
+    </div>
+    <div class="solution">
+      <div><span class="value" id="YearValue">--</span>years</div>
+      <div><span class="value" id="MonthValue">--</span>months</div>
+      <div><span class="value" id="DateValue">--</span>days</div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/karthick-kaliannan-68b763191/">Karthick</a>.
+  </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
